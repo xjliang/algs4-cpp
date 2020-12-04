@@ -7,7 +7,7 @@
  *                https://algs4.cs.princeton.edu/11model/largeW.txt
  *                https://algs4.cs.princeton.edu/11model/largeT.txt
  *
- *  % ./BinarySearch tinyW.txt < tinyT.txt
+ *  % ./BinarySearch ../algs4-data/tinyW.txt < ../algs4-data/tinyT.txt
  *  23
  *  10
  *  18
@@ -24,7 +24,7 @@
  *  77
  *  68
  *
- *  % ./BinarySearch largeW.txt < largeT.txt | more
+ *  % ./BinarySearch ../algs4-data/largeW.txt < ../algs4-data/largeT.txt | more
  *  944443
  *  293674
  *  572153
