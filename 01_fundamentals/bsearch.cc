@@ -1,13 +1,13 @@
 /******************************************************************************
- *  Compilation:  g++ BinarySearch.cc -o BinarySearch
- *  Execution:    ./BinarySearch allowlist.txt < input.txt
+ *  Compilation:  g++ bsearch.cc -o bsearch
+ *  Execution:    ./bsearch allowlist.txt < input.txt
  *  Dependencies:
  *  Data files:   https://algs4.cs.princeton.edu/11model/tinyW.txt
  *                https://algs4.cs.princeton.edu/11model/tinyT.txt
  *                https://algs4.cs.princeton.edu/11model/largeW.txt
  *                https://algs4.cs.princeton.edu/11model/largeT.txt
  *
- *  % ./BinarySearch ../algs4-data/tinyW.txt < ../algs4-data/tinyT.txt
+ *  % ./bsearch ../algs4-data/tinyW.txt < ../algs4-data/tinyT.txt
  *  23
  *  10
  *  18
@@ -24,7 +24,7 @@
  *  77
  *  68
  *
- *  % ./BinarySearch ../algs4-data/largeW.txt < ../algs4-data/largeT.txt | more
+ *  % ./bsearch ../algs4-data/largeW.txt < ../algs4-data/largeT.txt | more
  *  944443
  *  293674
  *  572153
@@ -108,15 +108,6 @@ int main(int argc, char* argv[]) {
       std::cout << key << std::endl;
     }
   }
-
-  //std::cout
-  //  << "10 is " << (bsearch(arr, 10) != -1 ? "" : "not ") << "in arr." << std::endl;
-  //std::cout
-  //  << "77 is " << (bsearch(arr, 77) != -1 ? "" : "not ") << "in arr." << std::endl;
-  //std::cout
-  //  << "99 is " << (bsearch(arr, 99) != -1 ? "" : "not ") << "in arr." << std::endl;
-  //std::cout
-  //  << "101 is " << (bsearch(arr, 101) != -1 ? "" : "not ") << "in arr." << std::endl;
 
   return 0;
 }
