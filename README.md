@@ -4,18 +4,20 @@ Algorithms, 4th edition textbook code and libraries implemented by C++
 
 ### 1 FUNDAMENTALS
 
-| Status             | #    | Program                                    | Description   |
-| ------------------ | ---- | ------------------------------------------ | ------------- |
-| :white_check_mark: | –    | [bsearch.cc](./01_fundamentals/bsearch.cc) | binary search |
-|                    | 1.1  | stack.cc                                   |               |
-|                    | 1.3  | queue.cc                                   |               |
-|                    | 1.4  | bag.cc                                     |               |
-|                    | -    | threeSum.cc                                |               |
-|                    | -    | threeSumFast.cc                            |               |
-|                    | -    | quickFindUF.cc                             |               |
-|                    | -    | quifckUnionUF.cc                           |               |
-|                    | 1.5  | weightedQuickUnionUF.cc                    |               |
-|                    | -    | uf.cc                                      |               |
+| Status             | #    | Program                                                      | Description                         |
+| ------------------ | ---- | ------------------------------------------------------------ | ----------------------------------- |
+| :white_check_mark: | –    | [bsearch.cc](./01_fundamentals/bsearch.cc)                   | binary search                       |
+|                    | 1.1  | stack.cc                                                     |                                     |
+|                    | 1.3  | queue.cc                                                     |                                     |
+|                    | 1.4  | bag.cc                                                       |                                     |
+|                    | -    | threeSum.cc                                                  |                                     |
+|                    | -    | threeSumFast.cc                                              |                                     |
+|                    | 1.5  | [quickFindUF.cc](./01_fundamentals/quickFindUF.cc)           | quick find                          |
+|                    | -    | [quifckUnionUF.cc](./01_fundamentals/quifckUnionUF.cc)       | quick union                         |
+|                    | -    | [quickUnionPathCompressionUF.cc](./01_fundamentals/quickUnionPathCompressionUF.cc) | quick union with path compression   |
+|                    | -    | [weightedQuickUnionUF.cc](./01_fundamentals/weightedQuickUnionUF.cc) | weighted quick union                |
+|                    | -    | [weightedQuickUnionPathCompression.cc](./01_fundamentals/weightedQuickUnionPathCompression.cc) | union-by-size with path compression |
+|                    | -    | uf.cc                                                        | union-by-rank with path halving     |
 
 ## 2 SORTING
 
