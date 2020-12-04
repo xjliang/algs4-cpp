@@ -23,7 +23,7 @@
   * This implementation uses weighted quick union by size without full path compression.
   * The constructor takes theta(n) time, where n is the number of sites.
   * The find, and union operatoins take theta(log(n)) time in the worse case;
-  * the count operaon takes theta(1) time.
+  * the count operation takes theta(1) time.
   * Moreover, starting from an empty data structure with n sites, any
   * intermixed sequence of m union and find operatons take alpha(n) time,
   * where alpha(n) is the inverse of https://en.wikipedia.org/wiki/Ackermann_function#Inverse.
@@ -37,7 +37,7 @@
 
 class WeightedQuickUnionPathCompressionUF {
  public:
-  // Initializes an empty uinon-find data structure with n elements
+  // Initializes an empty union-find data structure with n elements
   // 0 through n - 1. Initially, each element is in its own set.
   WeightedQuickUnionPathCompressionUF(int n) : count_(n) {
     parent_.reserve(n);
@@ -93,7 +93,7 @@ class WeightedQuickUnionPathCompressionUF {
     int n = parent_.size();
     if (p < 0 || p >= n) {
       char msg[80];
-      sprintf(msg, "index %d is not betwwen 0 and %d", p, n - 1);
+      sprintf(msg, "index %d is not between 0 and %d", p, n - 1);
       throw new std::out_of_range(msg);
     }
   }
@@ -133,4 +133,3 @@ int main(int argc, char* argv[]) {
 
   return 0;
 }
-

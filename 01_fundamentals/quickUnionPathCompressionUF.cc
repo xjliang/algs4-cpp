@@ -15,7 +15,7 @@
 #include <stdexcept>
 
  /**
-  * The QuickUnoinUF class represents a union-find data type
+  * The QuickUnionUF class represents a union-find data type
   * (also known as the disjoint-sets data type).
   * It supports the classic union and find operations,
   * along with a count operation that returns the total number of sets.
@@ -23,7 +23,7 @@
   * This implementation uses quick union (no weighting) with full path compression.
   * Initializing a data structure with <em>n</em> sites takes linear time.
   * Afterwards, union, find take logarithmic amortized time,
-  * and the count operaon takes constant time.
+  * and the count operation takes constant time.
   *
   * For additional documentation, see https://algs4.cs.princeton.edu/15uf.
   * 
@@ -106,4 +106,3 @@ int main(int argc, char* argv[]) {
 
   return 0;
 }
-

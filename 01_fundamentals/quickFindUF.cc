@@ -24,7 +24,7 @@
   * with each element in exactly one set.
   * The element are named 0 through n - 1.
   * Initially, there are n sets, with each element in its own set. The canonical
-  * element of a set (also known as the root, identifier, leader, or set representive)
+  * element of a set (also known as the root, identifier, leader, or set representative)
   * in one distinguished element in the set. Here is a summary of the operations:
   *
   *   - find
@@ -46,7 +46,7 @@
   *
   * This implementation uses quick find.
   * The constructor takes theta(n) time, where n is the number of sites.
-  * The find, and count operatoins take theta(1) time; the union operaon
+  * The find, and count operatoins take theta(1) time; the union operation
   * takes theta(n) time.
   *
   * For alternative implementations of the same API, see uf, quickUnionUF
@@ -59,7 +59,7 @@
 
 class QuickFindUF {
  public:
-  // Initializes an empty uinon-find data structure with n elements
+  // Initializes an empty union-find data structure with n elements
   // 0 through n - 1. Initially, each element is in its own set.
   QuickFindUF(int n) : count_(n) {
     id_.reserve(n);
@@ -105,7 +105,7 @@ class QuickFindUF {
     int n = id_.size();
     if (p < 0 || p >= n) {
       char msg[80];
-      sprintf(msg, "index %d is not betwwen 0 and %d", p, n - 1);
+      sprintf(msg, "index %d is not between 0 and %d", p, n - 1);
       throw new std::out_of_range(msg);
     }
   }
@@ -143,4 +143,3 @@ int main(int argc, char* argv[]) {
 
   return 0;
 }
-

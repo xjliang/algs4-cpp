@@ -15,7 +15,7 @@
 #include <stdexcept>
 
  /**
-  * The QuickUnoinUF class represents a union-find data type
+  * The QuickUnionUF class represents a union-find data type
   * (also known as the disjoint-sets data type).
   * It supports the classic union and find operations,
   * along with a count operation that returns the total number of sets.
@@ -24,7 +24,7 @@
   * with each element in exactly one set.
   * The element are named 0 through n - 1.
   * Initially, there are n sets, with each element in its own set. The canonical
-  * element of a set (also known as the root, identifier, leader, or set representive)
+  * element of a set (also known as the root, identifier, leader, or set representative)
   * in one distinguished element in the set. Here is a summary of the operations:
   *
   *   - find
@@ -47,7 +47,7 @@
   * This implementation uses quick find.
   * The constructor takes theta(n) time, where n is the number of sites.
   * The find, and union operatoins take theta(n) time in the worse case;
-  * the count operaon takes theta(1) time.
+  * the count operation takes theta(1) time.
   *
   * For alternative implementations of the same API, see uf, quickUnionUF
   * and weightedQuickUnionUF.
@@ -59,7 +59,7 @@
 
 class QuickUnionUF {
  public:
-  // Initializes an empty uinon-find data structure with n elements
+  // Initializes an empty union-find data structure with n elements
   // 0 through n - 1. Initially, each element is in its own set.
   QuickUnionUF(int n) : count_(n) {
     parent_.reserve(n);
@@ -101,7 +101,7 @@ class QuickUnionUF {
     int n = parent_.size();
     if (p < 0 || p >= n) {
       char msg[80];
-      sprintf(msg, "index %d is not betwwen 0 and %d", p, n - 1);
+      sprintf(msg, "index %d is not between 0 and %d", p, n - 1);
       throw new std::out_of_range(msg);
     }
   }
@@ -139,4 +139,3 @@ int main(int argc, char* argv[]) {
 
   return 0;
 }
-
