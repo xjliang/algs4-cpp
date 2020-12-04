@@ -13,10 +13,10 @@ Algorithms, 4th edition textbook code and libraries implemented by C++
 |                    | -    | threeSum.cc                                                  |                                     |
 |                    | -    | threeSumFast.cc                                              |                                     |
 |                    | 1.5  | [quickFindUF.cc](./01_fundamentals/quickFindUF.cc)           | quick find                          |
-|                    | -    | [quifckUnionUF.cc](./01_fundamentals/quifckUnionUF.cc)       | quick union                         |
+|                    | -    | [quifckUnionUF.cc](./01_fundamentals/quickUnionUF.cc)       | quick union                         |
 |                    | -    | [quickUnionPathCompressionUF.cc](./01_fundamentals/quickUnionPathCompressionUF.cc) | quick union with path compression   |
 |                    | -    | [weightedQuickUnionUF.cc](./01_fundamentals/weightedQuickUnionUF.cc) | weighted quick union                |
-|                    | -    | [weightedQuickUnionPathCompression.cc](./01_fundamentals/weightedQuickUnionPathCompression.cc) | union-by-size with path compression |
+|                    | -    | [weightedQuickUnionPathCompression.cc](./01_fundamentals/weightedQuickUnionPathCompressionUF.cc) | union-by-size with path compression |
 |                    | -    | uf.cc                                                        | union-by-rank with path halving     |
 
 ## 2 SORTING
