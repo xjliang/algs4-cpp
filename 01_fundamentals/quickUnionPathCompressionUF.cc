@@ -33,7 +33,7 @@
 
 class QuickUnionPathCompressionUF {
  public:
-  // Initializes an empty uinon-find data structure with n elements
+  // Initializes an empty union-find data structure with n elements
   // 0 through n - 1. Initially, each element is in its own set.
   QuickUnionPathCompressionUF(int n) : count_(n) {
     parent_.reserve(n);
